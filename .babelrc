@@ -1,0 +1,30 @@
+{
+  "plugins": [
+    "transform-object-rest-spread"
+    , ["component", [
+        {
+          "libraryName": "mint-ui", "style": true
+        }
+      ]]
+  ],
+  "presets": [
+    "es2015"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "istanbul"
+      ]
+    },
+    "production": {
+      "presets": [
+        [
+          "es2015",
+          {
+            "modules": false
+          }
+        ]
+      ]
+    }
+  }
+}
