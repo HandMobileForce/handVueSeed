@@ -17,7 +17,7 @@ Vue.use(VueRouter)
 //  });
 //};
 const router = new VueRouter({
-  mode: 'history',
+  history: false,
   routes: [
     {
       path: '/',
@@ -49,4 +49,4 @@ export default new Vue({
   el: '#app',
   router,
   render: h => h('router-view')
-})
+}).$mount('#app');
